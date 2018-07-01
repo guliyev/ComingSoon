@@ -1,0 +1,18 @@
+.navbar-brand img{
+    width: 90px;
+}
+.navbar{
+    display: inline-flex;
+}
+.nav-container{
+    background: #686868;
+}
+.btn{
+    background: none;
+    border: none;
+}
+#wrapper{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+}
