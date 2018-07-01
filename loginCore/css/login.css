@@ -1,0 +1,72 @@
+body{
+    color: #e4e7ea;
+    text-align: left;
+    background-color: #2f353a;
+
+}
+
+.right{
+    background-color: #3a4149;
+    padding-left: 50px;
+    border-radius: 5px 0px 0px 5px;
+}
+.right input{
+    display:flex;
+}
+.right i{
+    float: left;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.icon{
+    width: 35px;
+    height: 27px;
+    display: inline-flex;
+    margin-top: 8px;
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    background: green;
+}
+
+.left{
+    background-color: yellow;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* Bordered form */
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 72%;
+    padding: 0px 50px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.lgn{
+    width: 80%;
+   
+}
+.lgn label{
+    float: right;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0px 20px;
+    margin: 8px 0;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
