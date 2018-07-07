@@ -2,6 +2,16 @@ body {
   background: #3a4149;
   font-family: 'Poppins', sans-serif;
  }
+.navbar .fas{
+    margin-left: 5px;
+}
+ body p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
 .navbar{
     background: #3a4149;
     border-bottom: 1px solid #000000;
@@ -14,7 +24,7 @@ body {
  .btn-info{
     display: inline-block;
     position: relative;
-    left: 105px;
+      margin-left: 10px;
     background: none;
     width: 50px;
     border: none;
@@ -38,8 +48,11 @@ body {
  }
  .badge-info {
     color: #23282c;    
-    margin-left: 27px;
+    margin-left: 5px;
     background-color: #63c2de;
+}
+.badge-danger{
+    margin-left: 10px;
 }
  .nav-link{
      color: #c8ced3;
@@ -67,6 +80,12 @@ body {
     max-width: 250px;
     min-height: 100vh;
 }
+#sidebar .fas{
+    margin-right: 20px;
+}
+#sidebar .far{
+    margin-right: 20px;
+}
   body .wrapper {
     display: flex;
     width: 100%;
@@ -83,18 +102,21 @@ body {
     padding: .25rem 1.5rem;
     color: #212529;
     border: solid 1px;
-
+    border-radius: 10px;
     height: 500px;
     position: absolute;
+  }
+
+  .bag i{
+    padding-right: 30px;
   }
   .bag a{
 
     color: #e4e7ea;
-    width: 248px;
+    width: 208px;
     text-align: center;
-    margin-right: -24px;
     display: flex;
-    padding-left: 40px;
+    padding-left: 8px;
     padding-top: 15px;
     float: right;
   }
@@ -105,12 +127,82 @@ body {
  .bag b{
     color: #e4e7ea;
  }
+ .staticSecond{
+    width: 100%;
+    height: 70px;
+    position: relative;
+  
+ }
+ .staticSecond h5{
+    font-size: 13px;
+    position: absolute;
+    color: #e4e7e0;
+    font-weight: 600;
+    bottom: 68px;
+    display: inline-block;
+ }
+ .staticSecondPro{
+
+    width: 100%;
+    bottom: 47px;
+    height: 43px;
+    position: relative;
+ }
+ .staticSecondPro h5{
+    font-size: 13px;
+    position: absolute;
+    color: #e4e7e0;
+    font-weight: 600;
+    bottom: 44px;
+    display: inline-block;
+ }
+
+ /* Second Button nav */
+
+ .btn-second{
+    position: absolute;
+    bottom: 18px;
+    right: 136px;
+ }
+ .kvadr{
+    width: 240px;
+    height: 400px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid black;
+    background: #3a4149;
+    position: absolute;
+    right: 155px;
+
+ }
+ .kvadrTop{
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 37px;
+    background-color: #343b41;
+    padding-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+ }
+ .staticLine{
+    width: 90%;
+    padding-left: 20px;
+ }
+ .staticLine b{
+    font-size: 10px;
+ }
+ .staticLine p {
+    display: inline;
+    float: right;
+    font-size: 12px;
+ }
   .bag a:hover{
       background-color: #2f353a;
       color: #e4e7ea;
+      border-radius: 90px 0px 40px 0px;
      }
 
-     .progress{
+     .down{
         display: -ms-flexbox;
         display: flex;
         height: 5px;
@@ -120,9 +212,26 @@ body {
         background-color: #515b65;
         border-radius: .25rem;
      }
-     .progress-bar{
-        background-color: #ffed00;
+     .barColor{
+        background-color: #008cff;
      }
+     .yellowPro{
+        background-color: #515b65;
+        margin-top: 21pc;
+        height: 5px;
+     }
+     .barColorSecond{
+     background-color: rgb(238, 255, 0);
+     }
+     .redPro{
+        background-color: #515b65;
+        height: 5px;
+        margin-top: 50px;
+     }
+
+     .barColorRed{
+        background-color: rgb(255, 0, 0);
+        }
      .server{
         background: #343b41;
         border: 1px solid #23282c;
@@ -158,7 +267,7 @@ body {
   .notfigasion{
     background: #343b41;
     border-bottom: 1px solid #23282c;
-    border: 1px solid #23282c;
+    border-radius: 10px 16px 0px 0px;
     width: 250px;
     margin-top: -4px;
     color: white;
@@ -192,13 +301,7 @@ body {
 
 
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
+
 
 a, a:hover, a:focus {
     color: inherit;
@@ -208,12 +311,17 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #3a4149;
+
     color: #fff;
     transition: all 0.3s;
+    overflow-y: scroll;
+    height: 1px;
+    width: 5px;
+    background: #2f353a;
 }
 .sidebar-header {
     border-right: 1px solid #000000;
+    background: #3a4248;
     
 }
 
@@ -257,4 +365,58 @@ ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #3a4149;
+}
+
+
+/* Container cod */
+.container-fluid{
+    padding-top: 70px;
+}
+
+.container-fluid .topKvadr{
+width: 250px;
+height: 165px;
+background-color: red;
+padding-top: 10px;
+padding-left: 15px;
+}
+.topKvadr .qi-card{
+   
+    width: 100%;
+    height: 82px;
+    
+}
+.text{
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+
+}
+.topKvadr .fas{
+    float: right;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.breadcrumb{
+
+    display: -webkit-inline-box;
+    color: white;
+    height: 40px;
+    background-color: #3a4149;
+    position: absolute;
+    margin-left: 200px;
+    border-bottom: 1px solid #23282c;
+}
+.breadcrumb span{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.breadli{
+    margin-left: 611px;
+}
+.breadcrumb a{
+    color: #20a8d8;
+}
+.breadli .btn-groug{
+    margin-left: 165px;
 }

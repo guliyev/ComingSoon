@@ -4,12 +4,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<title>CORE UI</title>
+
+	 
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
 	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	 <link rel="stylesheet" href="css/main.css">
+	 
 </head>
 
 <body>
@@ -17,145 +25,182 @@
 
 
 
-		<div id="content">
-				<nav class="navbar navbar-expand-lg">
-				<div class="logo">
-					<img src="img/logo/logo.sVg" alt="">
-				</div>
-		
-					<button type="button" id="sidebarCollapse" onclick="w3_open(),w3_close()" class="btn btn-info">
-						
-						<i class="fas fa-bars"></i>
-					</button>
-					
-					<ul class="nav-link">
-						<li><a href="">Dashboard</a></li>
-						<li><a href="">Users</a></li>
-						<li><a href="">Settings</a></li>
-					</ul>
-					
-					<button class="navbar-btn" type="navbar-btn" onclick="ghost()"><i class="far fa-bell"></i></button>
-					<div id="dropdown" class="dropdown-menu-righ">
-						<div class="dropdown-item-text bag">
-							 <div class="notfigasion">You have 5 notifications</div>
-							<a href="">New user registered</a>
-							<a href="">User Deleted</a>
-							<a href="">Sales report is ready</a>
-							<a href="">New client</a>
-							<a href="">Server overloaded</a>
-							
+	<div id="content">
+		<nav class="navbar navbar-expand-lg">
+			<div class="logo">
 
-							<div class="server">Server</div>
-							
-						                        	<div class="static">
-															<small><b>CPU USAGE</b></small>
-															<div class="progress">
-															  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-							
-																
-															
-															  </div>
-															</div>
-															<small><span>348 Processes. 1/4 Cores.</span></small>
-													</div>
-
-													<div class="static">
-															<small><b>CPU USAGE</b></small>
-															<div class="progress">
-															  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-							
-																
-															
-															  </div>
-															</div>
-															<small><span>348 Processes. 1/4 Cores.</span></small>
-													</div>
-
-													<div class="static down">
-															<small><b>CPU USAGE</b></small>
-															<div class="progress">
-															  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-							
-																
-															
-															  </div>
-															</div>
-															<small><span>348 Processes. 1/4 Cores.</span></small>
-													</div>
-						
-						</div>
-						
-					</div>
-				</nav>
+				<img src="img/logo/logo.sVg" alt="">
 			</div>
+
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<ul class="nav-link">
+				<li>
+					<a href="">Dashboard</a>
+				</li>
+				<li>
+					<a href="">Users</a>
+				</li>
+				<li>
+					<a href="">Settings</a>
+				</li>
+			</ul>
+
+			<button class="navbar-btn" type="navbar-btn" onclick="ghost()">
+				<i class="far fa-bell"></i>
+			</button>
+			<div id="dropdown" class="dropdown-menu-righ">
+				<div class="dropdown-item-text bag">
+					<div class="notfigasion">You have 5 notifications</div>
+					<a href="">
+						<i class="fas fa-user-edit" style="color:green;"></i>New user registered</a>
+					<a href="">
+						<i class="fas fa-user-times" style="color: red;"></i>User Deleted</a>
+					<a href="">
+						<i class="far fa-chart-bar"></i>Sales report is ready</a>
+					<a href="">
+						<i class="fas fa-shopping-cart"></i>New client</a>
+					<a href="">
+						<i class="far fa-compass"></i>Server overloaded</a>
+
+
+					<div class="server">Server</div>
+
+					<div class="static">
+						<small>
+							<b>CPU USAGE</b>
+						</small>
+						<div class="progress down">
+							<div class="progress-bar barColor" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+							</div>
+						</div>
+						<small>
+							<span>348 Processes. 1/4 Cores.</span>
+						</small>
+					</div>
+					
+					<div class="staticSecond">
+							<h5>MEMORY USAGE</h5>
+							<div class="progress yellowPro">
+								
+								<div class="progress-bar barColorSecond" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 75%" ></div>
+							  </div>
+							<small style="color: #c8ced3;position: relative;
+							top: 10px;">11444GB/16384MB</small>
+					</div>
+
+
+					  <div class="staticSecondPro">
+							<h5>SSD 1 USAGE</h5>
+							<div class="progress redPro">
+									<div class="progress-bar barColorRed" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 97%" ></div>
+								  </div>
+								  <small style="color: #c8ced3;position: relative;
+							top: 10px;">243GB/256GB</small>
+					  </div>
+
+			</div>
+			</div>
+
+
+			<button class="btn-second" onclick="ghostic()" style="background: none; border: none; color: white"><i class="fas fa-bars"></i>
+		
+			</button>
+			
+			<div id="dropdownSecond" class="dropdown-menu-righ">
+					<div class="dropdown-item-text bagSecond">
+						<div class="kvadr">
+							<div class="kvadrTop">You have 5 pending tasks</div>
+							<div class="staticLine">
+								<b>Upgrade NPM & Bower</b>
+								<p>0%</p>
+								<div class="progress" style="height: 5px;">
+									<div class="progress-bar" style="width: 47%; color: green; "></div>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+			</div>
+		</nav>
+	</div>
 
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<nav id="sidebar">
 			<div class="sidebar-header">
-				<h6><img src="img/icon/speed.png" alt=""> Dashboard<span class="badge badge-info">New</span></h6>
-				
+				<h6>
+					<img src="img/icon/speed.png" alt=""> Dashboard
+					<span class="badge badge-info">New</span>
+				</h6>
 			</div>
-
 			<ul class="list-unstyled components">
-				<p>Theme</p>
+				<p>THEME</p>
 				<li>
 					<h6>
-						<a href="#"><img src="img/icon/drop.png" alt="">Color</a>
+						<a href="#">
+							<i class="fas fa-tint"></i>Color</a>
 					</h6>
-					<a href="#homeSubmenu"><img src="img/icon/pen.png" alt="">Typography</a>
-					
+					<a href="#homeSubmenu">
+						<i class="fas fa-pen"></i>Typography</a>
+
 					<p>COMPONENTS</p>
 				</li>
 				<li>
-						<a href="#baseSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/puzzle.png" alt="">Base</a>
-						<ul class="collapse list-unstyled" id="baseSubmenu">
-							<li>
-								<a href="#">Breadcrumb</a>
-							</li>
-							<li>
-								<a href="#">Cards</a>
-							</li>
-							<li>
-								<a href="#">Carousel</a>
-							</li>
-							<li>
-								<a href="#">Collapse</a>
-							</li>
-							<li>
-								<a href="#">Jumbotron</a>
-							</li>
-							<li>
-								<a href="#">List group</a>
-							</li>
-							<li>
-								<a href="#">Navs</a>
-							</li>
-							<li>
-								<a href="#">Pagination</a>
-							</li>
-							<li>
-								<a href="#">Popovers</a>
-							</li>
-							<li>
-								<a href="#">Progress</a>
-							</li>
-							<li>
-								<a href="#">Scrollspy</a>
-							</li>
-							<li>
-								<a href="#">Switches</a>
-							</li>
-							<li>
-								<a href="#">Tabs</a>
-							</li>
-							<li>
-								<a href="#">Tooltips</a>
-							</li>
-						</ul>
+					<a href="#baseSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-puzzle-piece"></i>Base</a>
+					<ul class="collapse list-unstyled" id="baseSubmenu">
+						<li>
+							<a href="#">Breadcrumb</a>
+						</li>
+						<li>
+							<a href="#">Cards</a>
+						</li>
+						<li>
+							<a href="#">Carousel</a>
+						</li>
+						<li>
+							<a href="#">Collapse</a>
+						</li>
+						<li>
+							<a href="#">Jumbotron</a>
+						</li>
+						<li>
+							<a href="#">List group</a>
+						</li>
+						<li>
+							<a href="#">Navs</a>
+						</li>
+						<li>
+							<a href="#">Pagination</a>
+						</li>
+						<li>
+							<a href="#">Popovers</a>
+						</li>
+						<li>
+							<a href="#">Progress</a>
+						</li>
+						<li>
+							<a href="#">Scrollspy</a>
+						</li>
+						<li>
+							<a href="#">Switches</a>
+						</li>
+						<li>
+							<a href="#">Tabs</a>
+						</li>
+						<li>
+							<a href="#">Tooltips</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="#buttonSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Buttons</a>
+					<a href="#buttonSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="far fa-paper-plane"></i>Buttons</a>
 					<ul class="collapse list-unstyled" id="buttonSubmenu">
 						<li>
 							<a href="#">Buttons</a>
@@ -174,12 +219,14 @@
 						</li>
 					</ul>
 					<h6>
-							<a href="#"><img src="img/icon/drop.png" alt="">Charts</a>
+						<a href="">
+							<i class="fas fa-chart-pie"></i>Charts</a>
 					</h6>
 				</li>
-				
+
 				<li>
-					<a href="#editorsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Editors</a>
+					<a href="#editorsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-code"></i>Editors</a>
 					<ul class="collapse list-unstyled" id="editorsSubmenu">
 						<li>
 							<a href="#">Code Editor</a>
@@ -192,10 +239,11 @@
 						</li>
 					</ul>
 				</li>
-				
+
 
 				<li>
-					<a href="#formsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Forms</a>
+					<a href="#formsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="far fa-edit"></i>Forms</a>
 					<ul class="collapse list-unstyled" id="formsSubmenu">
 						<li>
 							<a href="#">Basic Forms</a>
@@ -210,98 +258,215 @@
 					</ul>
 				</li>
 				<h6>
-					<a href="#"><img src="img/icon/drop.png" alt="">Google Maps</a>
-			</h6>
+					<a href="#">
+						<i class="far fa-map"></i>Google Maps</a>
+					<span class="badge badge-danger">PRO</span>
+				</h6>
 
 
-			<li>
-				<a href="#iconsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Icons</a>
-				<ul class="collapse list-unstyled" id="iconsSubmenu">
-					<li>
-						<a href="#">CoreUI Icons</a>
-					</li>
-					<li>
-						<a href="#">Flags</a>
-					</li>
-					<li>
-						<a href="#">Font Awesome</a>
-					</li>
-					<li>
-						<a href="#">Simple Line Icons</a>
-					</li>
-				</ul>
-			</li>
+				<li>
+					<a href="#iconsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-star"></i>Icons</a>
+					<ul class="collapse list-unstyled" id="iconsSubmenu">
+						<li>
+							<a href="#">CoreUI Icons</a>
+						</li>
+						<li>
+							<a href="#">Flags</a>
+						</li>
+						<li>
+							<a href="#">Font Awesome</a>
+						</li>
+						<li>
+							<a href="#">Simple Line Icons</a>
+						</li>
+					</ul>
+				</li>
 
-			<li>
-				<a href="#notificationsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Notifications</a>
-				<ul class="collapse list-unstyled" id="notificationsSubmenu">
-					<li>
-						<a href="#">Alerts</a>
-					</li>
-					<li>
-						<a href="#">Badge</a>
-					</li>
-					<li>
-						<a href="#">Modals</a>
-					</li>
-					<li>
-						<a href="#">Toastr</a>
-					</li>
-				</ul>
-			</li>
+				<li>
+					<a href="#notificationsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-bell"></i>Notifications</a>
+					<ul class="collapse list-unstyled" id="notificationsSubmenu">
+						<li>
+							<a href="#">Alerts</a>
+						</li>
+						<li>
+							<a href="#">Badge</a>
+						</li>
+						<li>
+							<a href="#">Modals</a>
+						</li>
+						<li>
+							<a href="#">Toastr</a>
+						</li>
+					</ul>
+				</li>
 
 
-			<li>
-				<a href="#pluginsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Plugins</a>
-				<ul class="collapse list-unstyled" id="pluginsSubmenu">
-					<li>
-						<a href="#">Alerts</a>
-					</li>
-					<li>
-						<a href="#">Badge</a>
-					</li>
-					<li>
-						<a href="#">Modals</a>
-					</li>
-					<li>
-						<a href="#">Toastr</a>
-					</li>
-				</ul>
-			</li>
+				<li>
+					<a href="#pluginsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-bolt"></i>Plugins</a>
+					<ul class="collapse list-unstyled" id="pluginsSubmenu">
+						<li>
+							<a href="#">Alerts</a>
+						</li>
+						<li>
+							<a href="#">Badge</a>
+						</li>
+						<li>
+							<a href="#">Modals</a>
+						</li>
+						<li>
+							<a href="#">Toastr</a>
+						</li>
+					</ul>
+				</li>
 
-			<li>
-				<a href="#tablesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="img/icon/compass.png" alt="">Tables</a>
-				<ul class="collapse list-unstyled" id="tablesSubmenu">
-					<li>
-						<a href="#">Standard Tables</a>
-					</li>
-					<li>
-						<a href="#">DataTables</a>
-					</li>
-				</ul>
-			</li>
-			<h6>
-				<a href="">Widgets</a>
-			</h6>
+				<li>
+					<a href="#tablesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-list"></i>Tables</a>
+					<ul class="collapse list-unstyled" id="tablesSubmenu">
+						<li>
+							<a href="#">Standard Tables</a>
+						</li>
+						<li>
+							<a href="#">DataTables</a>
+						</li>
+					</ul>
+				</li>
+
+				<p>
+					<a href="">EXTRAS</a>
+				</p>
+
+				<li>
+					<a href="#pagesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-star"></i>Pages</a>
+					<ul class="collapse list-unstyled" id="pagesSubmenu">
+						<li>
+							<a href="#">Login</a>
+						</li>
+						<li>
+							<a href="#">Register</a>
+						</li>
+						<li>
+							<a href="#">Register</a>
+						</li>
+						<li>
+							<a href="#">Error 404</a>
+						</li>
+						<li>
+							<a href="#"> Error 500</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#appsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+						<i class="fas fa-clone"></i>Apps</a>
+					<ul class="collapse list-unstyled" id="appsSubmenu">
+						<li>
+							<a href="#">Invoicing</a>
+						</li>
+
+						<li>
+							<a href="#">Email</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 
-			
+
+
+
+
+
 
 		</nav>
-
+		
+<ol class="breadcrumb">
+	<li class="breadItem">Home</li>
+	<span>/</span>
+	<li class="breadItem"><a href="">Admin</a></li>
+	<span>/</span>
+	<li class="breadItem active">Dashboard</li>
+	<li class="breadli">
+		<div class="btn-groug">
+			<a href="" class="btn-nav"></a>
+			<a href="" class="btn-nav">Dashboard</a>
+			<a href="" class="btn-nav">Setting</a>
+		</div>
+	</li>
+</ol>
+		<div class="container-fluid">
+			<div class="row">
+			  <div class="col-md-3">
+				  <div class="topKvadr" style="background-color: #187da0">
+					  <button class="btn btn-transparent dropdown-toggle p-0"><i class="fas fa-cog"></i></button>
+					  <div class="qi-card">
+						  <div class="text">
+							  9.823
+						  </div>
+						  <div class="text-online">Members online</div>
+					  </div>
+				  </div>
+			
+			  </div>
+			  <div class="col-md-3">
+				  <div class="topKvadr" style="background-color: #2eadd3">
+					  <i class="fas fa-cog"></i>
+					  <div class="qi-card">
+						  <div class="text">
+							  9.823
+						  </div>
+						  <div class="text-online">Members online</div>
+					  </div>
+				  </div>
+				
+			  </div>
+			  <div class="col-md-3">
+				  <div class="topKvadr" style="background-color: #c69500">
+					  <i class="fas fa-cog"></i>
+					<div class="qi-card">
+						<div class="text">
+							9.823
+						</div>
+						<div class="text-online">Members online</div>
+					</div>
+				  </div>
+				
+			  </div>
+			  <div class="col-md-3">
+				  <div class="topKvadr" style="background-color: #f5302e">
+						<i class="fas fa-cog"></i>
+					  <div class="qi-card">
+						  <div class="text">
+							  9.823
+							</div>
+						  
+						  
+						  <div class="text-online">Members online</div>
+					  </div>
+				  </div>
+			  </div>
+			  
+			 
+		  </div>
 	</div>
 
+	
 
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	 crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-	 crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<!-- <script src="jquery-3.3.1.min.js"></script> -->
+	<script src="js/main.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>
