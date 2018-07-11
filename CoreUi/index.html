@@ -28,7 +28,7 @@
 	<div id="content">
 		<nav class="navbar navbar-expand-lg">
 			<div class="logo">
-
+                   <!--   Navbar   -->
 				<img src="img/logo/logo.sVg" alt="">
 			</div>
 
@@ -49,81 +49,93 @@
 				</li>
 			</ul>
 
-			<button class="navbar-btn" type="navbar-btn" onclick="ghost()">
-				<i class="far fa-bell"></i>
-			</button>
-			<div id="dropdown" class="dropdown-menu-righ">
-				<div class="dropdown-item-text bag">
-					<div class="notfigasion">You have 5 notifications</div>
-					<a href="">
-						<i class="fas fa-user-edit" style="color:green;"></i>New user registered</a>
-					<a href="">
-						<i class="fas fa-user-times" style="color: red;"></i>User Deleted</a>
-					<a href="">
-						<i class="far fa-chart-bar"></i>Sales report is ready</a>
-					<a href="">
-						<i class="fas fa-shopping-cart"></i>New client</a>
-					<a href="">
-						<i class="far fa-compass"></i>Server overloaded</a>
-
-
-					<div class="server">Server</div>
-
-					<div class="static">
-						<small>
-							<b>CPU USAGE</b>
-						</small>
-						<div class="progress down">
-							<div class="progress-bar barColor" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-							</div>
-						</div>
-						<small>
-							<span>348 Processes. 1/4 Cores.</span>
-						</small>
-					</div>
+			<div class="dropdownBell">
+					<button class="btn  dropdown" style="
+					background: none;
+					border:  none;
 					
-					<div class="staticSecond">
-							<h5>MEMORY USAGE</h5>
-							<div class="progress yellowPro">
-								
-								<div class="progress-bar barColorSecond" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 75%" ></div>
-							  </div>
-							<small style="color: #c8ced3;position: relative;
-							top: 10px;">11444GB/16384MB</small>
-					</div>
-
-
-					  <div class="staticSecondPro">
-							<h5>SSD 1 USAGE</h5>
-							<div class="progress redPro">
-									<div class="progress-bar barColorRed" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 97%" ></div>
-								  </div>
-								  <small style="color: #c8ced3;position: relative;
-							top: 10px;">243GB/256GB</small>
-					  </div>
-
-			</div>
-			</div>
-
-
-			<button class="btn-second" onclick="ghostic()" style="background: none; border: none; color: white"><i class="fas fa-bars"></i>
-		
-			</button>
+				" data-toggle="dropdown">
+							<i class="far fa-bell"></i>
+						</button>
+						<!-- navbar dropdown right -->
+						<div id="dropdown" class="dropdown-menu" style="height: 505px; background: #3a4149;" >
+							<div class="dropdown">
+								<div class="notfigasion">You have 5 notifications</div>
+								<a href="" class="dropdown-item">
+									<i class="fas fa-user-edit" style="color:green;"></i>New user registered</a>
+								<a href="" class="dropdown-item">
+									<i class="fas fa-user-times" style="color: red;"></i>User Deleted</a>
+								<a href="" class="dropdown-item">
+									<i class="far fa-chart-bar"></i>Sales report is ready</a>
+								<a href="" class="dropdown-item">
+									<i class="fas fa-shopping-cart"></i>New client</a>
+								<a href="" class="dropdown-item">
+									<i class="far fa-compass"></i>Server overloaded</a>
 			
-			<div id="dropdownSecond" class="dropdown-menu-righ">
-					<div class="dropdown-item-text bagSecond">
-						<div class="kvadr">
-							<div class="kvadrTop">You have 5 pending tasks</div>
-							<div class="staticLine">
-								<b>Upgrade NPM & Bower</b>
-								<p>0%</p>
-								<div class="progress" style="height: 5px;">
-									<div class="progress-bar" style="width: 47%; color: green; "></div>
+			
+								<div class="server">Server</div>
+			
+								<div class="static">
+									<small>
+										<b>CPU USAGE</b>
+									</small>
+									<div class="progress down">
+										<div class="progress-bar barColor" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+										</div>
+									</div>
+									<small>
+										<span>348 Processes. 1/4 Cores.</span>
+									</small>
 								</div>
-							</div>
-							
+								
+								<div class="staticSecond">
+										<h5>MEMORY USAGE</h5>
+										<div class="progress yellowPro">
+											
+											<div class="progress-bar barColorSecond" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 75%" ></div>
+										  </div>
+										<small style="color: #c8ced3;position: relative;
+										top: 10px;">11444GB/16384MB</small>
+								</div>
+			
+			
+								  <div class="staticSecondPro">
+										<h5>SSD 1 USAGE</h5>
+										<div class="progress redPro">
+												<div class="progress-bar barColorRed" role="progressbar" aria-valuenow="20" aria-valuemin="25" aria-valuemax="100" style="width: 97%" ></div>
+											  </div>
+											  <small style="color: #c8ced3;position: relative;
+										top: 10px;">243GB/256GB</small>
+								  </div>
+			
 						</div>
+						</div> 
+			</div>
 
+                          <!-- Dropdown Second     -->
+			<div class="dropdownBar">
+					<button class="btn  dropdown" style="
+					background: none;
+					border:  none;
+				" data-toggle="dropdown"><i class="fas fa-bars"></i>
+				
+					</button>
+					
+					<div id="dropdownSecond" class="dropdown-menu">
+							<div class="dropdown-item">
+								<div class="kvadr">
+									<div class="kvadrTop">You have 5 pending tasks</div>
+									<div class="staticLine">
+										<b>Upgrade NPM & Bower</b>
+										<p>0%</p>
+										<div class="progress" style="height: 5px;">
+											<div class="progress-bar" style="width: 47%; color: green; "></div>
+										</div>
+									</div>
+									
+								</div>
+		
+							</div>
 					</div>
 			</div>
 		</nav>
@@ -402,50 +414,111 @@
 			<div class="row">
 			  <div class="col-md-3">
 				  <div class="topKvadr" style="background-color: #187da0">
-					  <button class="btn btn-transparent dropdown-toggle p-0"><i class="fas fa-cog"></i></button>
+					  
 					  <div class="qi-card">
+							<button type="button" style="
+							background:  none;
+							border:  none;
+							width: 87px;
+							position: relative;
+							float: right;
+							height:  0px;
+						" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									<i class="fas fa-cog"></i></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+								</div>
+						  
 						  <div class="text">
 							  9.823
 						  </div>
 						  <div class="text-online">Members online</div>
+						  
 					  </div>
 				  </div>
 			
 			  </div>
 			  <div class="col-md-3">
 				  <div class="topKvadr" style="background-color: #2eadd3">
-					  <i class="fas fa-cog"></i>
+					
 					  <div class="qi-card">
+							<button type="button" style="
+							background:  none;
+							border:  none;
+							width: 87px;
+							position: relative;
+							float: right;
+							height:  0px;
+						" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									<i class="fas fa-cog"></i></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+								</div>
 						  <div class="text">
 							  9.823
 						  </div>
 						  <div class="text-online">Members online</div>
+						 
 					  </div>
 				  </div>
 				
 			  </div>
 			  <div class="col-md-3">
 				  <div class="topKvadr" style="background-color: #c69500">
-					  <i class="fas fa-cog"></i>
+					 
 					<div class="qi-card">
+							<button type="button" style="
+							background:  none;
+							border:  none;
+							float: right;
+							width: 87px;
+							position: relative;
+							height:  0px;
+						" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									<i class="fas fa-cog"></i></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+								</div>
 						<div class="text">
 							9.823
 						</div>
 						<div class="text-online">Members online</div>
+						
 					</div>
 				  </div>
 				
 			  </div>
 			  <div class="col-md-3">
 				  <div class="topKvadr" style="background-color: #f5302e">
-						<i class="fas fa-cog"></i>
+						
 					  <div class="qi-card">
+							<button type="button" style="
+							background:  none;
+							border:  none;
+							width: 87px;
+							position: relative;
+							float: right;
+							height:  0px;
+						" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									<i class="fas fa-cog"></i></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+									<a class="dropdown-item" href="">alma</a>
+								</div>
 						  <div class="text">
 							  9.823
 							</div>
 						  
 						  
 						  <div class="text-online">Members online</div>
+						 
 					  </div>
 				  </div>
 			  </div>
@@ -454,7 +527,7 @@
 		  </div>
 	</div>
 
-	
+	</div>
 
 
 
